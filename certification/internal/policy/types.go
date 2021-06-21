@@ -1,5 +1,9 @@
 package policy
 
+// TODO: The structs here are likely beneficial to developers writing custom policy, and
+// therefore it may make sense to move these from the internal/ parent package to a publicly
+// accessible location.
+
 type Definition struct {
 	ValidatorFunc func(string) (bool, error)
 	Metadata      Metadata
